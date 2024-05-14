@@ -18,7 +18,7 @@ from highrise.__main__ import *
 import asyncio, random
 from emotes import Emotes
 from emotes import Dance_Floor
-owners = ['xx.michel.xx','_kilito']
+owners = ['JXZL','_kilito']
 
 class BotDefinition:
     
@@ -187,7 +187,7 @@ class Bot(BaseBot):
 
      try:
 
-         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n  Bienvenid@ ala piscina \n ____________________________\n•para vip PM a sus Host \n•!list or -list\nA Gozar inviten.\n ____________________________\n")
+         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n  Bienvenid@ \n ____________________________\n•para Bots PM _kilito \n•!list or -list\nA Gracias\n ____________________________\n")
        
          await self.highrise.send_emote('emote-salute')
      
@@ -360,7 +360,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_5")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only xx.michel.xx can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only _kilito can use tip!")
          if message.startswith("❤️all"):
              if user.username.lower() in self.moderators:
                     roomUsers = (await self.highrise.get_room_users()).content
@@ -413,7 +413,7 @@ class Bot(BaseBot):
             args = parts[1:]
 
             if len(args) < 1:
-                await self.highrise.send_whisper(user.id, f"Usage !{parçalar[0]} <@Alionardo_>")
+                await self.highrise.send_whisper(user.id, f"Usage !{parçalar[0]} <@_kilito>")
                 return
             elif args[0][0] != "@":
                 await self.highrise.send_whisper(user.id, "Invalid user format. Please use '@username'.")
@@ -698,8 +698,8 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_5")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only _CAP0_ can use tip!")
-        if message.startswith("❤️ all"):
+                await  self.highrise.send_whisper(user.id, f"Only _kilito can use tip!")
+        if message.startswith("❤️all"):
              if user.username.lower() in self.moderators:
                 try:
                     roomUsers = (await self.highrise.get_room_users()).content
@@ -713,7 +713,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_1")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only _CAP0_ can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only _kilito can use tip!")
         if message == "/here":
             if user.username.lower() in self.moderators:
                 response = await self.highrise.get_room_users()
@@ -797,7 +797,7 @@ class Bot(BaseBot):
  
 
     async def on_user_move(self, user: User, pos: Position | AnchorPosition) -> None:
-      if user.username == " Alionardo_":
+      if user.username == " _kilito":
          print(f"{user.username}: {pos}")
       if user:
        

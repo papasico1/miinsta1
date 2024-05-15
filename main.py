@@ -372,7 +372,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_1")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only xx.michel.xx can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only xX.MICHEL.Xx can use tip!")
 
          if message.lower().lstrip().startswith(("-emotes", "!emotes")):
                 await self.highrise.send_whisper(user.id, "n ____________________________\n• Emote can be used by NUMBERS\n• For loops say -loop or !loop then the emote number.\n ____________________________\n")

@@ -187,7 +187,7 @@ class Bot(BaseBot):
 
      try:
 
-         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n  Bienvenid@ \n ____________________________\n•para Bots PM _kilito \n•!list or -list\nA Gracias\n ____________________________\n")
+         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n welcome  \n ____________________________\n•para Bots PM _kilito \n•!list or -list\nA Thanks\n ____________________________\n")
        
          await self.highrise.send_emote('emote-salute')
      

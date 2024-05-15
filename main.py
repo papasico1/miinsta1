@@ -92,7 +92,7 @@ class Bot(BaseBot):
             self.moderators = []
 
         # Add default moderators here
-        default_moderators = ['_kilito']
+        default_moderators = ['xX.MICHEL.Xx']
         for mod in default_moderators:
             if mod.lower() not in self.moderators:
                 self.moderators.append(mod.lower())
@@ -360,8 +360,8 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_5")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only _kilito can use tip!")
-         if message.startswith("❤️all"):
+                await  self.highrise.send_whisper(user.id, f"Only xX.MICHEL.Xx can use tip!")
+         if message.startswith("❤️"):
              if user.username.lower() in self.moderators:
                     roomUsers = (await self.highrise.get_room_users()).content
                     for roomUser, _ in roomUsers:

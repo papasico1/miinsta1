@@ -92,7 +92,7 @@ class Bot(BaseBot):
             self.moderators = []
 
         # Add default moderators here
-        default_moderators = ['xX.MICHEL.Xx']
+        default_moderators = ['_Kilito']
         for mod in default_moderators:
             if mod.lower() not in self.moderators:
                 self.moderators.append(mod.lower())
@@ -187,7 +187,7 @@ class Bot(BaseBot):
 
      try:
 
-         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n welcome  \n ____________________________\n•para Bots PM _kilito \n•!list or -list\nA Thanks\n ____________________________\n")
+         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n GRACIAS POR VENIR  \n ____________________________\n•para Bots PM _kilito \n•!list or -list\nA COMPRASs\n ____________________________\n")
        
          await self.highrise.send_emote('emote-salute')
      
@@ -372,7 +372,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_1")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only xX.MICHEL.Xx can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only _Kilito can use tip!")
 
          if message.lower().lstrip().startswith(("-emotes", "!emotes")):
                 await self.highrise.send_whisper(user.id, "n ____________________________\n• Emote can be used by NUMBERS\n• For loops say -loop or !loop then the emote number.\n ____________________________\n")
@@ -698,8 +698,8 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_5")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only xX.MICHEL.Xx can use tip!")
-        if message.startswith("❤️all"):
+                await  self.highrise.send_whisper(user.id, f"Only _Kilito can use tip!")
+        if message.startswith("❤"):
              if user.username.lower() in self.moderators:
                 try:
                     roomUsers = (await self.highrise.get_room_users()).content

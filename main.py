@@ -57,7 +57,7 @@ class Bot(BaseBot):
         self.convo_id_registry = []
         #dance floor position
         min_x = 4.5
-        max_x = 10.5
+        max_x = 18.5
         min_y = 0
         max_y = 1
         min_z = 13.5

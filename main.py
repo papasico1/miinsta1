@@ -187,7 +187,7 @@ class Bot(BaseBot):
 
      try:
 
-         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n GRACIAS POR VENIR  \n RENTA O VENTA DE BOTs\n•para Bots PM _kilito \n•!list or -list\nA COMPRASs\n ____________________________\n")
+         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n GRACIAS POR VENIR  \n A Playa Flamenco Oro\n•para Bots PM _kilito \n•!list or -list\nA COMPRASs\n ____________________________\n")
        
          await self.highrise.send_emote('emote-salute')
      
@@ -413,7 +413,7 @@ class Bot(BaseBot):
             args = parts[1:]
 
             if len(args) < 1:
-                await self.highrise.send_whisper(user.id, f"Usage !{parçalar[0]} <@Beverzly>")
+                await self.highrise.send_whisper(user.id, f"Usage !{parçalar[0]} <@NaomiCristal>")
                 return
             elif args[0][0] != "@":
                 await self.highrise.send_whisper(user.id, "Invalid user format. Please use '@username'.")
@@ -698,7 +698,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_5")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only _Kilito can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only     NaomiCristal can use tip!")
         if message.startswith("❤"):
              if user.username.lower() in self.moderators:
                 try:
@@ -713,7 +713,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_1")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only xX.MICHEL.Xx can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only NaomiCristal can use tip!")
         if message == "/here":
             if user.username.lower() in self.moderators:
                 response = await self.highrise.get_room_users()

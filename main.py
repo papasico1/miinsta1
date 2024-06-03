@@ -413,7 +413,7 @@ class Bot(BaseBot):
             args = parts[1:]
 
             if len(args) < 1:
-                await self.highrise.send_whisper(user.id, f"Usage !{parçalar[0]} <@NaomiCristal>")
+                await self.highrise.send_whisper(user.id, f"Usage !{parçalar[0]} <@Naomicristal>")
                 return
             elif args[0][0] != "@":
                 await self.highrise.send_whisper(user.id, "Invalid user format. Please use '@username'.")

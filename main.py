@@ -187,7 +187,7 @@ class Bot(BaseBot):
 
      try:
 
-         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n GRACIAS POR VENIR  \n A Playa Flamenco Oro\n•para Bots PM _kilito \n•!list or -list\nA COMPRASs\n ____________________________\n")
+         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n GRACIAS POR VENIR  \\n•para Bots PM _kilito \n•!list or -list\nA COMPRASs\n ____________________________\n")
        
          await self.highrise.send_emote('emote-salute')
      
@@ -360,7 +360,7 @@ class Bot(BaseBot):
                 for roomUser, _ in roomUsers:
                   await self.highrise.tip_user(roomUser.id, "gold_bar_5")
               else: 
-                await  self.highrise.send_whisper(user.id, f"Only @_Kilito can use tip!")
+                await  self.highrise.send_whisper(user.id, f"Only _Kilito can use tip!")
          if message.startswith("❤️"):
              if user.username.lower() in self.moderators:
                     roomUsers = (await self.highrise.get_room_users()).content
